@@ -108,7 +108,7 @@ footer{
 /* Position the image container (needed to position the left and right arrows) */
 #slideshow-container {
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 90%;
   left: 5%;
   max-height: 600px;
@@ -118,7 +118,7 @@ footer{
 
 #slideshow-container a.button{
   color: white;
-  background-color: grey;
+  background-color: black;
   position: absolute;
   bottom: 10%;
   right: 5%;
@@ -258,13 +258,18 @@ input#questions{
   justify-content: space-around;
 }
 
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
 #nav {
   list-style: none inside;
   margin: 0;
   padding: 0;
   text-align: center;
-  position: relative;
-  left: 200px;
+  position: absolute;
+  top: 0px;
 }
 
 #nav li {
@@ -291,16 +296,12 @@ input#questions{
   font-size: 80%;
 }
 
-
 /* smaller font size for sub menu items */
-
 #nav li:hover {
-  background: purple;
+  background: grey;
 }
 
-
 /* highlights current hovered list item and the parent list items when hovering over sub menues */
-
 #nav ul {
   position: absolute;
   z-index: 5;
@@ -314,16 +315,12 @@ input#questions{
   display: none;
 }
 
-
 /* hides sub-sublists */
-
 #nav li:hover ul {
   display: block;
 }
 
-
 /* shows sublist on hover */
-
 #nav li li:hover ul {
   display: block;
   /* shows sub-sublist on hover */
@@ -331,7 +328,7 @@ input#questions{
   /* this should be the same width as the parent list item */
   margin-top: -35px;
   /* aligns top of sub menu with top of*/
-}
+}/*# sourceMappingURL=index.css.map */
 
 h2{
   padding-bottom: 20px;
