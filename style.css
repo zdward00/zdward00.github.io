@@ -84,13 +84,6 @@ div.scroll-container {
   align-items: center;
 }*/
 
-footer{
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  bottom: 0px;
-}
-
 .center{
   position: relative;
 }  
@@ -205,24 +198,32 @@ footer{
   opacity: 1;
 }
 
-.info-column#aboutus{
+#footer {
+  position: relative;
+  bottom: 0;
+}
+
+.info-column {
+  display: inline;
+}
+
+.info-column#aboutus {
   text-align: left;
   width: 33.33%;
   position: relative;
-  padding-left: 30px;
-  
+  padding-left: 0px;
 }
 
-.info-column#store{
+.info-column#store {
   text-align: right;
   width: 33.33%;
   position: relative;
-  padding-right: 30px;
- 
+  padding-right: 0px;
 }
 
-.info-column#questions{
+.info-column#questions {
   text-align: center;
+  position: relative;
   width: 33.33%;
 }
 

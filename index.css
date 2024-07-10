@@ -26,12 +26,6 @@ a {
   clear: both;
 }
 
-.row-footer {
-  width: 90%;
-  margin: 0 auto;
-  padding: 0;
-  display: inline-block;
-}
 
 .row img {
   -o-object-fit: cover;
@@ -48,12 +42,14 @@ a {
 }
 
 #footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 
-.info-column {
-  display: inline;
+div.subscribe{
+ display: grid;
+ justify-content: center;
+ text-align: center;
 }
 
 .info-column#aboutus {
@@ -76,12 +72,16 @@ a {
   width: 33.33%;
 }
 
+.info-row{
+  justify-content: space-between;
+}
+
 .mySlides {
   display: none;
 }
 
 .row-footer {
-  width: 90%;
+  width: 100%;
   left: 5%;
   overflow: hidden;
   background-color: black;
@@ -286,6 +286,7 @@ header p {
   background: black;
   /* menu background color */
 }
+
 
 #nav li a {
   display: block;
