@@ -4,34 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="index.css" />                      
+    <link rel="stylesheet" href="style.css"/>                      
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
     <title>The Gallery</title>
 </head>
 
 <body>
-  <div id="navbar">
-    <ul id="nav">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="thegallery.html">The Gallery</a>
-      </li>
-      <li><a href="thelounge.html">The Lounge</a>
-      </li>
-      <li><a href="game201.html">Classwork</a>
-        <ul>
-          <li><a href="con.html">Game 201 - Con</a></li>
-          <li><a href="#">Game 201 - Trading Cards</a></li>
-        </ul>
+<!-- Navbar -->
+    <div id="navbar">
+      <ul id="nav">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="thegallery.html">The Gallery</a>
         </li>
-      <li><a href="aboutme.html">About Me</a></li>
-    </ul>
-  </div>
+        <li><a href="thelounge.html">The Lounge</a>
+        </li>
+        <li><a href="aboutme.html">About Me</a></li>
+      </ul>
+    </div>
 
 <header>
     <h1>Welcome to<br> <span>The Gallery</span></h1>
-    <br>
-    <span>(Please pardon  mess. We're still setting up)</span>
 </header>
 
 
@@ -40,7 +33,7 @@
 <section class="gallery">
   <div class="row">
     <ul>
-      <button href="#" class="close"><span aria-hidden="true">&times;</span></button>
+      
       <li>
         <a href="#mindmap">
           <img src="assets/gallery/Mind Map_Landscape Default.jpg" alt="mindmap">
@@ -149,8 +142,8 @@
 
   <!-- Item 01 -->
   <div id="mindmap" class="port">
-  
-    <div class="row">
+    <button href="#" class="close"><span aria-hidden="true">&times;</span></button>
+    <div>
       <div class="description">
         <h1>Mind Map</h1>
         <p>A mind map is similar to a moodboard in that it serves as a space to collect related ideas. I made this mind map for an
@@ -168,7 +161,7 @@
   <!-- Item 02 -->
   <div id="toast" class="port">
   
-    <div class="row">
+    <div>
       <div class="description">
         <h2>Avocado Toast w/ Herbed Pesto</h2>
         <p>Here we see the illustrious avocado toast in all its glory. This particular spin was served at a coffee shop I worked at. This was the
@@ -182,13 +175,14 @@
   <!-- Item 03 -->
   <div id="birds" class="port">
   
-    <div class="row">
+    <div>
+      <img src="assets/gallery/captivebirds.JPG" alt="birds">
       <div class="description">
         <h2>Captive Birds</h2>
         <p>A photo captured during band practice with local band Captive Birds. The band has roots in Norfolk, Virginia and plays gigs locally and across states. They play a modern style of indie rock; think Death Cab for Cuties with slightly more edge.
            Pictured singing is band member Scott Rockswold, a childhood friend.</p>
       </div>
-      <img src="assets/gallery/captivebirds.JPG" alt="birds">
+      
     </div> <!-- / row -->
 
   </div> <!-- / Item 03 -->
@@ -196,7 +190,7 @@
   <!-- Item 04 -->
   <div id="piano" class="port">
   
-    <div class="row">
+    <div>
       <div class="description">
         <h1>Synthesizer</h1>
         <p>Another photo taken during a Captive Birds band practice featuring Jake generating reverberating bass from their synth. 
@@ -210,7 +204,7 @@
     <!-- Item 05 -->
   <div id="flower" class="port">
   
-    <div class="row">
+    <div>
       <div class="description">
         <h1>Flower Bloom</h1>
         <p>I took this photo at the first wedding I went to photograph. At the time, I wasn't an experienced wedding photographer, but a coworker was kind enough
@@ -225,7 +219,7 @@
     <!-- Item 06 -->
   <div id="chairs" class="port">
   
-    <div class="row">
+    <div>
       <div class="description">
         <h1>Two Chairs</h1>
         <p>On a trip to Florida to attend my godfather's funeral with my family, I looked out of our window and saw these two chairs situated as they are in the picture.
@@ -240,7 +234,7 @@
     <!-- Item 07 -->
   <div id="cards" class="port">
   
-    <div class="row">
+    <div>
       <div class="description">
         <h1>Love Letters</h1>
         <p>Party favors from a wedding I worked at. When you plant the heart, it grows into a wildflower! 
@@ -254,7 +248,7 @@
     <!-- Item 08 -->
   <div id="relativitybooth" class="port">
   
-    <div class="row">
+    <div>
       <div class="description">
         <h1>Relativity Booth</h1>
         <p> A photo from the Richmond Science Museum. To be quite honest, I don't remember what the Relativity Booth was. If memory serves correctly,
@@ -460,55 +454,41 @@
 </section> <!-- / projects -->
 
 
-
- <!-- Subscribe section -->
- <div class="subscribe">
-  <h1>Subscribe</h1>
-  <input type="text" placeholder="Enter e-mail" size="100" id="subBox">
-  <a href="#0" type="button" class="button" style="margin-top: 10px">Subscribe</a>
-  <p>Get notified when we drop something new!</p>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
 <div class="row-footer">
-    <!-- About Column -->
-  <div id="aboutus">
-    <h2>Socials</h2>
-        <p><a href="#">Instagram</a></p>
-        <p><a href="#">YouTube</a></p>
-        <p><a href="#">Etsy</a></p>
-        <p><a href="#">GitHub</a></p>
-        <p><a href="#">Discord</a></p>
-  </div>
-    <!-- Questions -->
-    <div  id="questions">
-      <h2>Questions or conerns?</h2>
-      <h4>Let us know here.</h4>
-      <div>
-        <form action="/action_page.php" target="_blank" id="questions">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required id="questions"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" id="questions" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" id="questions" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" id="questions" required></p>
-          <a href="#0" class="button" id="submit">Send</a>
-        </form>
+        <!-- About Column -->
+      <div class="info-column" id="aboutus">
+        <h2>Socials</h2>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">YouTube</a></p>
+            <p><a href="#">Etsy</a></p>
+            <p><a href="#">GitHub</a></p>
+            <p><a href="#">Discord</a></p>
       </div>
-    </div>
+        <!-- Questions -->
+        <div class="info-column" id="questions">
+          <h2>Send a message!</h2>
+          <div>
+            <form action="/action_page.php" target="_blank" id="questions">
+              <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required id="questions"></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" id="questions" required></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" id="questions" required></p>
+              <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" id="questions" required></p>
+              <a href="#0" class="button" id="submit">Send</a>
+            </form>
+          </div>
+        </div>
 
-    <!-- Site Info -->
-    <div id="store">
-      <h2>Info</h2>
-      <br>
-      <br>
-      <br>
-      <p><i class="fa fa-fw fa-map-marker"></i>The Lab</p>
-      <p><i class="fa fa-fw fa-phone"></i> 555-555-5555</p>
-      <p><i class="fa fa-fw fa-envelope"></i> thelabstudioco@gmail.com</p>
+        <!-- Site Info -->
+        <div class="info-column" id="store">
+          <h2>Info</h2>
+          <br>
+          <br>
+          <br>
+          <p><i class="fa fa-fw fa-map-marker"></i>The Lab</p>
+          <p><i class="fa fa-fw fa-phone"></i> 555-555-5555</p>
+          <p><i class="fa fa-fw fa-envelope"></i> thelabstudioco@gmail.com</p>
+        </div>
+        
     </div>
     
 </div>
