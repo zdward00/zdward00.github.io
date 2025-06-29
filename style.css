@@ -24,11 +24,10 @@ header {
   background-color: #9f5b3b;
   color: #fff;
   text-align: center;
-  padding: 10px 0 50px;
   top: 50px;
   position: relative;
-  width: 70%;
-  left: 15%;
+  width: 90%;
+  margin-left: 5%;
 }
 
 header h1 {
@@ -549,4 +548,69 @@ h2{
   float: left;
   margin: 0 0.8771929825%;
   overflow: hidden;
+}
+
+div#filterbar{
+  
+  display: flex;
+  place-content: center;
+  position: relative;
+  bottom: 0px;
+}
+
+#filterbar ul#filternav {
+  font-family: "Montserrat", sans-serif;
+  list-style: none inside;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+#filternav li {
+  display: block;
+  position: relative;
+  float: left;
+  background-color: #9f5b3b;
+  /* menu background color */
+  font-size: 110%;
+}
+
+#filternav li a {
+  color: white;
+  display: block;
+  place-content: center;
+  padding: 0;
+  text-decoration: none;
+  width: 200px;
+  /* this is the width of the menu items */
+  line-height: 35px;
+  /* this is the hieght of the menu items */
+}
+
+#filternav li li a {
+  font-size: 80%;
+}
+
+/* smaller font size for sub menu items */
+#filternav li a:hover {
+  background: #a59079;
+}
+
+/* highlights current hovered list item and the parent list items when hovering over sub menues */
+#filternav ul {
+  position: absolute;
+  z-index: 5;
+  padding: 0;
+  left: 0;
+  display: none;
+  /* hides sublists */
+}
+
+#filternav li:hover ul ul {
+  display: none;
+}
+
+/* hides sub-sublists */
+#filternav li:hover ul {
+  display: block;
 }
